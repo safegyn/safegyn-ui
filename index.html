@@ -2,40 +2,139 @@
 <html class="no-js" lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("navbarSnippet").load("navbar-snippet.html");
+            $("footerSnippet").load("footer-snippet.html");
+            $("metaSnippet").load("meta-snippet.html");
+        });
+    </script>
 
-  <meta name="theme-color" content="#fafafa">
+    <metaSnippet></metaSnippet>
+
+    <title>Website title - bootstrap html template</title>
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <navbarSnippet></navbarSnippet>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <output>
+
+        <section class="section-content padding-y">
+
+            <div class="container pl-0 pr-0">
+                <article class="card card-body">
+                    <div class="row">
+                        <div class="col-md-6 pl-5 pr-5">
+                            <p class="banner-title-text">
+                                Crowdsourced List of Gynaecologists<br>
+                                <span class="banner-title-text-highlight">You Can Trust</span>
+                            </p>
+                            <p class="banner-info-text">
+                                Browse verified, in-depth reviews and find gynaes who are well-trained, affordable,
+                                reassuring, and above
+                                all, respectful of any sexual or lifestyle choices while being devoid of moral
+                                judgements
+                                <a
+                                    href="https://docs.google.com/document/d/17Z8mrQo80A_kYwGN-j9MjH1ppSTWjVxDgYK0njpb6yE/pub">
+                                    Read More
+                                </a>
+                            </p>
+                            <div class="cc-div">
+                                <div>
+                                    <img class="cc-license-img" src="img/cc.png" />
+                                    <img class="cc-license-img" src="img/by.png" />
+                                    <img class="cc-license-img" src="img/nc.png" />
+                                    <img class="cc-license-img" src="img/sa.png" />
+                                </div>
+                                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
+                                    data-toggle="tooltip" class="popover-info-text"
+                                    title="The Crowdsourced List of Gynaecologists We Trust In India by Amba Azaad is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License">
+                                    <small style="font-weight: bolder;">BY-NC-SA 4.0 (Amba Azad)</small>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 pb-3 banner-search-section flexbox">
+                            <div class="container">
+                                <div class="row pl-4 pr-4">
+                                    <div class="col-sm-4 banner-stat-tile">
+                                        <span class="banner-stat-tile-value" id="banner-city-count">
+                                            <i class="fa fa-map-pin banner-icon"></i> 20+
+                                        </span><br />
+                                        <div class="">
+                                            Cities
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 banner-stat-tile">
+                                        <span class="banner-stat-tile-value" id="banner-review-count">
+                                            <i class="fa fa-star banner-icon"></i> 120+
+                                        </span><br />
+                                        <div class="rating-wrap">
+                                            Reviews
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 banner-stat-tile">
+                                        <span class="banner-stat-tile-value" id="banner-doctor-count">
+                                            <i class="fa fa-user-circle banner-icon"></i> 60+
+                                        </span><br />
+                                        <div class="rating-wrap">
+                                            Gynaes
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="input-group justify-content-center">
+                                        <select class="form-control" id="banner-search-select" name="city"
+                                            style="width: 70%;">
+                                            <option disabled selected hidden>Browse doctors in your city</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="AB">Alberta</option>
+                                            <option value="WS">Wisconsin</option>
+                                            <option value="TX">Texas</option>
+                                            <option value="DY">Derry</option>
+                                        </select>
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary banner-search-btn" type="button">
+                                                <i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flexbox">
+                                    <div class="font-weight-bold mt-2" style="width: 70%; border: 1px solid black;">
+                                        <a
+                                            href="https://docs.google.com/forms/d/e/1FAIpQLSeYciqN9Tz-EMAbXyz3gO06wC4LSyUyExCKlOXXx3dCDjF0Hg/viewform?c=0&w=1">
+                                            <i class="fa fa-pen rounded-circle"></i>&nbsp; Review a Doctor
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+    </output>
+
+    <footerSnippet></footerSnippet>
+
 </body>
 
 </html>

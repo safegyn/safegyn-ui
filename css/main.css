@@ -19,9 +19,6 @@ output {
   width: 100%
 }
 
-.section-content {
-}
-
 .card-product-list:last-child {
   margin-bottom: 0 !important
 }
@@ -204,6 +201,7 @@ textarea {
 body {
   color: var(--theme-gray);
   font-family: Lato;
+  width: 75%;
 }
 
 div,
@@ -220,6 +218,10 @@ a {
 }
 
 @media only screen and (max-width: 412px) {
+
+  body {
+    width: 100%;
+  }
 
   .banner-stat-tile {
     font-size: 0.8em;
@@ -374,6 +376,14 @@ a {
   text-align: right;
 }
 
+.flexbox-left {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-flow: column;
+  text-align: right;
+}
+
 .flexbox-right {
   width: 100%;
   text-align: right;
@@ -423,7 +433,6 @@ a:hover {
 }
 
 .name-circle {
-  border: 1px solid red;
   width: 4.4em;
   height: 4.4em;
   border-radius: 100%;
@@ -444,6 +453,7 @@ a:hover {
   font-size: 1.2em;
   font-weight: 900;
   padding-left: 15px;
+  text-align: left !important;
 }
 
 .doctor-tile-phone {
@@ -458,6 +468,7 @@ a:hover {
 }
 
 .doctor-tile-container {
+  width: 100%;
   padding: 0.6em;
 }
 

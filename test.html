@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jscroll.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("navbarSnippet").load("navbar-snippet.html");
+            $("footerSnippet").load("footer-snippet.html");
+            $("metaSnippet").load("meta-snippet.html");
+        });
+    </script>
+
+    <metaSnippet></metaSnippet>
+
+    <title>Website title - bootstrap html template</title>
+</head>
+
+<body>
+
+    <navbarSnippet></navbarSnippet>
+
+    <output>
+
+        <section class="scroll-section">
+            <p id="testPara">FILLER TEXT</p>
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            hello <br />
+            ############################ <br />
+
+            <a class="jscroll-next" href="testg2.html">NEXHSTTT</a>
+            <a class="jscroll-next" href="test2.html">NEXHSTTT</a>
+
+        </section>
+
+        <nav class="mt-4 flexbox" aria-label="Page navigation sample">
+            <ul class="pagination">
+                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+
+    </output>
+
+    <footerSnippet></footerSnippet>
+
+    <script>
+        $('.scroll-section').jscroll({
+            loadingHtml: '<img src="img/loading.gif" alt="Loading" /> Loading...',
+            padding: 20,
+            nextSelector: 'a.jscroll-next:nth-last-child(2)',
+            debug: true,
+            contentSelector: 'section'
+        });
+
+
+
+    </script>
+
+</body>
